@@ -15,6 +15,20 @@ const server = http.createServer(app);
 const io = socketIO(server);
 const users = new Users();
 
+// [] chatrooms case insensitive 
+// [] usernames unique
+// [] list of currently active chatrooms
+// [] emojis and gifs and images in chat
+// [] map image not just link for location
+//////
+// [] different colors for user names
+// [] user icons/pics
+// [] make an account
+// [] download current chatroom dialog as file
+// [] clear old dialog after certain ammount of time
+//////
+// [] encryption?
+
 io.on('connection', (socket) => {
     console.log("New user connected");
 
